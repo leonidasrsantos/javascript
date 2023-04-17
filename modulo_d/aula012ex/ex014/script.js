@@ -4,7 +4,7 @@ var data = new Date
 var hora =  data.getHours()
 var minuto = data.getMinutes()
 var dias = data.getDate()
-var mes = data.getMonth()
+var mes = data.getMonth() + 1
 var ano = data.getFullYear()
 
 msg.innerHTML = `Agora são ${hora} horas e ${minuto} minutos.`

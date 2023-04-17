@@ -9,17 +9,17 @@
 </head>
 <body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Contador</h1>
     </header>
     <section>
-        <div id="msg">
-            
+        <div>
+            <p>Inicio: <input type="number" name="inicion" id="inicioN"></p>
+            <p>Fim: <input type="number" name="fimn" id="fimN"></p>
+            <p>Passo: <input type="number" name="passon" id="passoN" min="1"></p>
+            <input type="button" value="Contar" onclick="contar()">
         </div>
-        <div id="foto">
-            <img src="" id="imagem" alt="">
-        </div>
-        <div id="dia">
-        
+        <div id="res">
+            <p>Preparando contagem...</p>
         </div>
     </section>
     <footer>

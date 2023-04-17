@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+body{
+    background-color: #121212;
+}
+body > div{
+    max-width: 900px;
+    margin: auto;
+}
+header{
+    background-color: black;
+    height:75px;
+    text-align: center;
+    color: rgb(0, 204, 255);
+}
+header div{
+    padding: 10px;
+    border-bottom:1px solid gray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.622);
+}
+h1{
+    font-family: sans-serif;
+    background: -webkit-linear-gradient(left,rgb(255, 255, 0) 50%, rgb(255, 255, 255) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+}
+nav{
+    margin: 20px auto;
+    text-align: center;
+    width: 96%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+lord-icon{
+    cursor: pointer;
+    width: 50px;
+}
+nav div{
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+nav > p{
+    background-color:black;
+    width: 200px;
+    margin: auto;
+    border: 1px solid rgb(116, 115, 115);
+    border-top: none;
+    border-radius: 0px 0px 5px 5px;
+}
+nav > p a{
+    text-decoration: none;
+    color: rgb(249, 249, 255)
+}
+nav > p a:hover{
+    text-decoration: underline;
+    color: rgb(60, 60, 255);
+}
+nav > div::-webkit-scrollbar{
+    height:7px;
+    background-color: transparent;
+}
+nav > div::-webkit-scrollbar-thumb{
+    background-color:rgb(180, 34, 34);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.486) inset;
+    border-radius:50px;
+}
+nav li{
+    display: inline-block;
+    margin: 20px 10px;
+    list-style: none;
+    cursor: pointer;
+}
+section{
+    text-align: center;
+    width: 98%;
+    margin: 20px auto;
+    border-radius: 7px;
+    background-color:white;
+}
+section > h2{
+    font-size: 1.6em;
+    background-color: gainsboro;
+    border-radius: 6px 6px 0px 0px;
+}
+section div.listaModulos{
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.27) inset;
+    font-size: 1.3em;
+    padding: 4px;
+    line-height: 30px;
+}
+section div.listaModulos > ul > li{
+    color: red;
+    background-color: gainsboro;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+section div.listaModulos li{
+    border: 1px rgba(0, 0, 0, 0.085) solid;
+}
+section div.listaModulos a{
+    text-decoration: none;
+    color: blue;
+    padding: 0px 100px;
+}
+section ul span{
+    color: gray;
+    font-size: 0.7em;
+}
+section#projetos li{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(241, 241, 241);
+    margin: 30px 6px;
+    border: 1px solid rgb(177, 175, 175);
+    border-radius: 40px;
+    overflow: hidden;
+}
+section#projetos li:hover{
+    background-color: rgb(221, 221, 221);
+}
+section#projetos img{
+    padding: 10px 25px 0px 25px ;
+    width: 100px;
+    height: 100px;
+}
+section#projetos a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: brown;
+    padding-bottom: 40px;
+}
