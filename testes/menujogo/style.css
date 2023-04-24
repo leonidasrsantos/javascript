@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    color:white;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+section#menu,section#games{
+    background: url(https://live.staticflickr.com/2880/10688206825_dd5aa4d3a5_b.jpg) no-repeat center ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    
+}
+section#menu,section#games> div{
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+header{
+    background-color: #2D0794;
+    color: aliceblue;
+    font-size: 2em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.692);
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    box-shadow:0px 0px 6px rgba(0, 0, 0, 0.436) inset;
+    border: 3px solid rgb(210, 210, 10);
+    border-radius: 50px;
+    outline: 2px solid rgb(228, 228, 3);
+}
+nav ul{
+    margin-top: 50px;
+}
+nav li{
+    background-color: #067096;
+    font-size: 2em;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #084A73;
+    border-radius: 10px;
+    cursor: pointer;
+}
+nav li:hover{
+    background-color: #084A73;
+    color: yellow;
+    border: 1px solid yellow;
+}
+section > footer{
+    position: relative;
+    top: 550px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.537);
+    width: 80%;
+    padding: 10px;
+}
+section > footer a:hover{
+    color: brown;
+}
+
+section#games > div{
+    background-color: rgba(0, 0, 0, 0.245);
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+section#games  h2{
+    background-color: rgba(100, 100, 100, 0.332);
+}
+section#games li{
+    font-size: 1.7em;
+    background-color: #2d079447;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+section#games li:hover{
+    background-color: #2D0794;
+}
+section#games div#explicacao{
+    position: relative;
+    width: 80%;
+}
+
+section#selecaoPersonagens{
+    background: url(https://cdn-images-1.medium.com/max/2000/1*8U6mDTbtmWsxhocBQbmSYQ.jpeg) no-repeat center ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    
+}
+section#selecaoPersonagens div{
+    text-align: center;
+}
+
+section#selecaoPersonagens ul{
+    background-color: rgba(128, 128, 128, 0.315);
+    border: 1px solid rgba(0, 0, 0, 0.264);
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+section#selecaoPersonagens ul img{
+    position: relative;
+    width: 65px;
+    height: 65px;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 10px;
+
+}
+section#selecaoPersonagens li{
+    display: inline-block;
+    border: 1px solid yellow;
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    cursor: pointer;
+}
+section#selecaoPersonagens div#img{
+    background-color: rgba(0, 0, 0, 0.204);
+    width: 300px;
+    height: 470px;
+    margin:auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451) inset;
+}
+section#selecaoPersonagens div#img h2{
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 0px 0px 20px 20px;        
+}
+section#selecaoPersonagens div#img img{
+    position: relative;
+    top: 4%;
+    width: 250px;
+    height: 400px;
+    
+    
+}
+section#selecaoPersonagens div.descricao{
+    padding: 10px;
+}
+
+div > button{
+    font-size: 1.4em;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+
+}
+

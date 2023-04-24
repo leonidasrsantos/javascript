@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adaptações button</title>
+    <style>
+        body{
+            background-color: rgb(0, 145, 255);
+            list-style-type: none;
+        }
+        nav ul{
+            text-align: center;
+            margin: 30px;
+            background-color: gainsboro;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+        nav li{
+            display: inline;
+            padding: 10px;
+            cursor: pointer;
+        }
+        nav li:hover{
+            background-color: grey;
+        }
+        div#inform{
+            background-color: white;
+            font-size: 1.2em;
+            text-align: center;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+            </ul>
+        </nav>
+    </div>
+    <div id="informacoes" style="display: none;">
+        
+    </div>
+    <div id="inform">
+        <article style="display: none;">1</article>
+        <article style="display: none;">2</article>
+        <article style="display: none;">3</article>
+        <article style="display: none;">4</article>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title></title>
+</head>
+<body>
+    <!--Sessão de escolha de personagem-->
+    <section id="menu" style="display:none;">
+        <div>
+            <header>
+                <h1>Village Assassinate</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>Jogar</li>
+                    <li>Opções</li>
+                    <li>Sobre</li>
+                </ul>
+            </nav>
+        </div>
+        <footer>
+            <p>Projeto criado para ampliar conhecimentos em desenvolvimento Web.</p>
+            <p><a href="https://www.bing.com/images/search?view=detailV2&ccid=XYPdIBbu&id=C23B91B3170E291E73C1595F8F7FF17B1EC0D0CD&thid=OIP.XYPdIBbu8-i5cSythceKXgHaEK&mediaurl=https%3a%2f%2flive.staticflickr.com%2f2880%2f10688206825_dd5aa4d3a5_b.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.5d83dd2016eef3e8b9712cad85c78a5e%3frik%3dzdDAHnvxf49fWQ%26pid%3dImgRaw%26r%3d0&exph=576&expw=1024&q=background+Pixel+Art+vila&simid=608022057964487012&FORM=IRPRST&ck=710D3A4A007EB536A9A69EDEE626C3E0&selectedIndex=20&qft=+filterui%3alicense-L2_L3_L4_L5_L6_L7&ajaxhist=0&ajaxserp=0" target="_blank">Imagem</a> de fundo possuí <strong>direitos livres</strong> para <strong>compartilhamento e utilização.</strong></p>
+        </footer>
+    </section>
+    <!--Sessão de seleção modo de jogo-->
+    <section id="games" style="display: none;">
+        <div>
+                <h2>Modos de jogo</h2>
+            <ul>
+                <li>Arcade</li>
+                <li>Classíco</li>
+                <li>Hardcore</li>
+                <li>Jogo Rapído</li>
+                <li>Sala Privada</li>
+            </ul>
+        </div>
+    </section>
+    <!--Sessão de seleção de Personagens-->
+    <section id="selecaoPersonagens">
+        <div>
+            <ul id="personagens">
+                <li><img src="_imagens/personagem0.jpg" alt=""><legend>Comerciante</legend></li>
+                <li><img src="_imagens/personagem1.jpg" alt=""> <legend>Padeiro</legend></li>
+                <li><img src="_imagens/personagem2.jpg" alt=""> Fazendeiro</li>
+                <li><img src="_imagens/personagem3.jpg" alt=""> Policial</li>
+                <li><img src="_imagens/personagem4.jpg" alt=""> Médico</li>
+                <li><img src="_imagens/personagem5.jpg" alt=""> Musico</li>
+                <li><img src="_imagens/personagem6.jpg" alt=""> Ferreiro</li>
+                <li><img src="_imagens/personagem7.jpg" alt=""> Morador</li>
+            </ul>
+        </div>
+        <div>
+            <div id="img">
+                <h2 id="nick">(Personagem)</h2>
+                <img src="_imagens/personagem.jpg" alt="" id="imagemRotativa">
+
+            </div>
+            <div class="descricao">
+                <p id="description">Description</p>
+                <descri id="descricao" style="display: none;">
+                    <des>O comerciante tem a função de achar e vender itens importantes como poções de cura, kits medícos e alimentos. Quando vilão podem sabotar suas poções e comercializalas. </des>
+                    <des>O padeiro tem a função de vender alimento para manter os moradores nutridos. Quando vilão podem sabotar seus alimentos com veneno.</des>
+                    <des>O fazendeiro tem a função de manter matéria prima ao padeiro. Quando vilão pode sabotar a matéria deixando toxíca.</des>
+                    <des>O polícial tem a função de ficar acordado a noite vigiando a vila e prender suspeitos. Quando vilão pode sabotar morte de prisioneiros.</des>
+                    <des>O médico tem a função de combater virús e doenças, assim deixando os aldeões saudáveis. Quando vilão o mesmo pode se aproveitar de virús malignos e bacterias para sabotar o vilarejo.</des>
+                    <des>O musíco tem a função de tocar músicas apenas. Quando vilão pode fazer seu alvo adormecer com uma musiquinha de ninar e ataca-lo.</des>
+                    <des>O ferreiro tem a função de manter armas disponiveis para proteção dos aldeões. Quando vilão pode-se aproveitar de suas armas para assassinar.</des>
+                    <des>O morador.</des>
+                </descri>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
