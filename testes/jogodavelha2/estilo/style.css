@@ -97,3 +97,7 @@ div#posJogo button{
 div#posJogo button:hover{
     color: red;
 }
+div#anunciador h2 > span{
+    color: red;
+    font-weight: bold;
+}

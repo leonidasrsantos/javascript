@@ -9,12 +9,12 @@
 </head>
 <body>
     <div class="center">
-        <div id="introducao" style="display: none;">
+        <div id="introducao" style="display: block;">
             <p>Quem começa?</p>
             <p><button onclick="escolhaX()">X</button> ou <button onclick="escolhaO()">O</button></p>
         </div>
-        <div id="jogodavelha">
-            <div id="anunciador"><h2>Agora é a vez do <span id="jogador" style="color:red;font-weight: bolder;"></span> </h2></div>
+        <div id="jogodavelha" style="display: none;"> 
+            <div id="anunciador"><h2 id="anunciante">Agora é a vez do <span></span> </h2></div>
             <div id="jogo">
                 <table>
                     <tr id="linhaCima">
