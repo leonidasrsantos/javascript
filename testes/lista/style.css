@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/*Azul escuro: #003366
+Azul médio: #006699
+Azul claro: #0099CC
+Azul mais claro: #00CCFF*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+html{
+    background-color: #d1d0bc;
+}
+header{
+background-color:#5a7e8c ;
+font-size: 1.2em;
+text-align: center;
+height: 75px;
+color: white;
+}

@@ -1,93 +1,26 @@
-let introducao = window.document.getElementById('introducao')
-let moduloa = window.document.getElementById('moduloA')
-let modulob = window.document.getElementById('moduloB')
-let moduloc = window.document.getElementById('moduloC')
-let modulod = window.document.getElementById('moduloD')
-let moduloe = window.document.getElementById('moduloE')
-let modulof = window.document.getElementById('moduloF')
+//Funções de clique no nav para abrir o Modulo desejado
 
+let introducao = window.document.getElementById('aviso01')
+let modulos = window.document.querySelectorAll('div#navegacao li')
+let arquivos = window.document.querySelectorAll('section#arquivos div')
 
-function moduloA(){
-    if(moduloa.style.display == 'none'){
-        introducao.style.display = 'none'
-        moduloa.style.display = 'block'
-        modulob.style.display = 'none'
-        moduloc.style.display = 'none'
-        modulod.style.display = 'none'
-        moduloe.style.display = 'none'
-        modulof.style.display = 'none'
-    }else{
-        introducao.style.display = 'block'
-        moduloa.style.display = 'none'
-    }
-}
-function moduloB(){
-    if(modulob.style.display == 'none'){
-        introducao.style.display = 'none'
-        moduloa.style.display = 'none'
-        modulob.style.display = 'block'
-        moduloc.style.display = 'none'
-        modulod.style.display = 'none'
-        moduloe.style.display = 'none'
-        modulof.style.display = 'none'
-    }else{
-        introducao.style.display = 'block'
-        modulob.style.display = 'none'
-    }
-}
-function moduloC(){
-    if(moduloc.style.display == 'none'){
-        introducao.style.display = 'none'
-        moduloa.style.display = 'none'
-        modulob.style.display = 'none'
-        moduloc.style.display = 'block'
-        modulod.style.display = 'none'
-        moduloe.style.display = 'none'
-        modulof.style.display = 'none'
-    }else{
-        introducao.style.display = 'block'
-        moduloc.style.display = 'none'
-    }
-}
-function moduloD(){
-    if(modulod.style.display == 'none'){
-        introducao.style.display = 'none'
-        moduloa.style.display = 'none'
-        modulob.style.display = 'none'
-        moduloc.style.display = 'none'
-        modulod.style.display = 'block'
-        moduloe.style.display = 'none'
-        modulof.style.display = 'none'
-    }else{
-        introducao.style.display = 'block'
-        modulod.style.display = 'none'
-    }
-}
-function moduloE(){
-    if(moduloe.style.display == 'none'){
-        introducao.style.display = 'none'
-        moduloa.style.display = 'none'
-        modulob.style.display = 'none'
-        moduloc.style.display = 'none'
-        modulod.style.display = 'none'
-        moduloe.style.display = 'block'
-        modulof.style.display = 'none'
-    }else{
-        introducao.style.display = 'block'
-        moduloe.style.display = 'none'
-    }
-}
-function moduloF(){
-    if(moduloa.style.display == 'none'){
-        introducao.style.display = 'none'
-        moduloa.style.display = 'none'
-        modulob.style.display = 'none'
-        moduloc.style.display = 'none'
-        modulod.style.display = 'none'
-        moduloe.style.display = 'none'
-        modulof.style.display = 'block'
-    }else{
-        introducao.style.display = 'block'
-        modulof.style.display = 'none'
-    }
+for (let pos = 0;pos < modulos.length; pos++){
+    modulos[pos].addEventListener('click', function(){
+        if (arquivos[pos].style.display == 'none'){
+            introducao.style.display = 'none'
+            arquivos[pos].style.display = 'block'
+            modulos[pos].style.color = 'yellow'
+            for (let posi = 0; posi < arquivos.length; posi++){
+                if(posi != pos){ 
+                arquivos[posi].style.display = 'none'
+                modulos[posi].style.color = 'white'
+                }
+            }
+        }
+        else{
+            introducao.style.display = 'block'
+            arquivos[pos].style.display = 'none'
+            modulos[pos].style.color = 'white'
+        }        
+    })
 }

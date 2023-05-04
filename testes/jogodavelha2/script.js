@@ -20,7 +20,7 @@ function escolhaO(){
 }
 
 for (let pos = 0 ; pos < space.length;pos++){
-    space[pos].addEventListener ('click',function clique(){
+    space[pos].addEventListener ('click',function(){
         player = window.document.querySelector('h2 span')
         if(validacao == false && space[pos].textContent == ''){
             n += 1
